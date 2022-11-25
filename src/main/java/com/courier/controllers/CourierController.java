@@ -21,6 +21,7 @@ public class CourierController {
 	@PreAuthorize("hasRole('ROLE_EMPLOYEE') or hasRole('ROLE_USER')")
 	@GetMapping(value = "transaction.htm")
 	public String transaction(ModelMap map) {
+		System.out.println("Testing");
 
 		TransactionDTO transactionDTO = new TransactionDTO();
 		map.addAttribute("transaction", transactionDTO);
