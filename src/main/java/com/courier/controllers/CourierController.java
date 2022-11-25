@@ -35,6 +35,8 @@ public class CourierController {
 		transactionDTO = service.addTransaction(transactionDTO);
 		request.setAttribute("transaction", transactionDTO);
 
+		System.out.println("hello");
+
 		return "sendsuccess";
 	}
 }
